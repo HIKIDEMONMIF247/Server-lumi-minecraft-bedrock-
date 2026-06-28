@@ -1,0 +1,17 @@
+name: MyEssentials
+version: 1.0.0
+api: ["1.0.0"]
+main: ru.myauth.essentials.MyEssentials
+description: Мой личный плагин на команды
+author: Admin
+
+commands:
+  rtp:
+    description: Случайный телепорт
+  sethome:
+    description: Поставить точку дома
+  home:
+    description: Телепортироваться домой
+  tpto:
+    description: Телепорт к другу по нику
+    
