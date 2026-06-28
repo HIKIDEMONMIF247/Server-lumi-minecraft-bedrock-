@@ -14,7 +14,7 @@ import java.util.Random;
 
 public class MyEssentials extends PluginBase {
 
-    private final Map<String, Location> homes = new HashMap<>();
+    private final Map<String, Location> homes = new HashMap<String, Location>();
     private final Random random = new Random();
 
     @Override
@@ -63,7 +63,7 @@ public class MyEssentials extends PluginBase {
                     return true;
                 }
                 Player target = Server.getInstance().getPlayer(args[0]);
-                if (target != null && target.isOnline()) {
+                if (target != null) {
                     player.teleport(target.getLocation());
                     player.sendMessage(TextFormat.GREEN + "Ты телепортировался к " + target.getName());
                 } else {
@@ -73,4 +73,4 @@ public class MyEssentials extends PluginBase {
         }
         return false;
     }
-                                       }
+}
