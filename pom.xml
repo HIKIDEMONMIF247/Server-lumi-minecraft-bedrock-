@@ -7,9 +7,10 @@
   <version>1.0.0</version>
 
   <repositories>
+    <!-- Официальный новый работающий репозиторий для Nukkit/Lumi зависимостей -->
     <repository>
-      <id>opencollab-repo</id>
-      <url>https://repo.opencollab.dev/maven-snapshots/</url>
+      <id>opencollab-snapshots</id>
+      <url>https://repo.opencollab.dev/snapshot/</url>
     </repository>
     <repository>
       <id>maven-central</id>
@@ -18,6 +19,7 @@
   </repositories>
 
   <dependencies>
+    <!-- Подключаем базовую библиотеку API -->
     <dependency>
       <groupId>cn.nukkit</groupId>
       <artifactId>nukkit</artifactId>
